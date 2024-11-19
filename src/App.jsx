@@ -5,7 +5,7 @@ import ReportPage from './pages/ReportPage';
 import LookerPage from './pages/LookerPage';
 import CodePage from './pages/CodePage';
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'; 
 import Navigation from './components/Navigation'; 
 import Layout from './components/Layout'; 

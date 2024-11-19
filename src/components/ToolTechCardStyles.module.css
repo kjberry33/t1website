@@ -1,0 +1,42 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .cardImage {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .cardTitle {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .cardDescription {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    p{
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cardDescription {
+      display: none;
+    }
+  }
+  

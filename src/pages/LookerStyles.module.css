@@ -1,0 +1,60 @@
+.mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 0;
+    
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .lookerIframe {
+    width: 100vw; /* Full width of the viewport */
+    height: 60vh; /* Adjust the height */
+    border: none;
+  }
+  
+  .transcriptButton {
+    display: block;
+    margin: 20px auto 20px auto;
+    padding: 20px 20px;
+    font-size: 16px;
+    background-color: #ffc425;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    
+  }
+  
+  .transcriptButton:hover {
+    background-color: #777;
+    color: white;
+  }
+  
+  .transcript {
+    margin-top: 20px;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    p{
+      font-size: 16px;
+      line-height: 1.5;
+      }
+  }
+  

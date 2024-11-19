@@ -1,0 +1,83 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: auto;
+    padding: 0 5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner img {
+    height: 8vh;
+    width: auto;
+    display: block;
+  }
+  
+  .title {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(16px, 3vw, 24px);
+    color: #333;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    a{
+      text-decoration: none;
+      color:black;
+    }
+  }
+  
+  .title:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .hamburger .bar {
+    background-color: #333;
+    height: 4px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(6px);
+  }
+  
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+    .title{
+      display: none !important;
+    }
+    .banner{
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+  }
+  

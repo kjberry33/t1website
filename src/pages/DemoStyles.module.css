@@ -1,0 +1,131 @@
+.demoMain {
+    padding: 0px;
+  }
+  
+  .demoHeading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox Layout for Video and Text */
+  .demoContent {
+    display: flex;
+    justify-content: space-between; /* Space between video and text */
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Add spacing between the video and the text */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  /* Video Styling */
+  .demoVideo {
+    width: 70%; /* Adjust width to be 70% of the container */
+    max-width: 70%; /* Ensure it doesn't exceed 70% width */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    border: none; /* Remove border */
+    height: auto; /* Automatically adjust height to preserve aspect ratio */
+  }
+  
+  /* Text Section Styling */
+  .demoText {
+    max-width: 400px; /* Limit the text width */
+    flex: 1; /* Allow the text to take up available space */
+    padding: 10px;
+    .videolink a{
+      justify-content: center;
+      padding: auto;
+      text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+    }
+    a:hover{
+      color:#ffc425;
+    }
+    .videolink:hover{
+      transform: scale(1.1);
+    }
+  }
+  
+  .demoText h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .demoText p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .demoContent {
+      flex-direction: column; /* Stack video and text vertically on small screens */
+      align-items: center; /* Center-align both video and text */
+    }
+  
+    .demoVideo {
+      width: 100%; /* Make sure the video takes full width on smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add space below the video */
+    }
+  
+    .demoText {
+      width: 90%; /* Allow text to occupy more space on smaller screens */
+      text-align: center; /* Center-align text */
+    }
+  }
+  
+  /* Dropdown Button and Transcript Styling */
+  .transcriptContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .toggleButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #231f20;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .toggleButton:hover {
+    background-color: #444;
+  }
+  
+  .transcriptContent {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .transcriptContent h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .transcriptContent p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .toolsSection {
+    text-align: center; /* Centers the content horizontally */
+    margin-top: 50px;   
+  }
+  
+  .toolsHeading {
+    font-size: 2rem;       /* Larger font size for the title */
+    font-weight: bold;     /* Bold font weight */
+    color: #333;           /* Darker color for contrast */
+    margin-bottom: 20px;   /* Adds some space below the title */
+  }

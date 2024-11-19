@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .sideMargins {
+    flex: 1;
+  }
+  
+  .content {
+    flex: 2;
+    background-color: white;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Media query for smaller devices */
+@media (max-width: 768px) {
+    .wrapper {
+      background-image: none; /* Remove background image */
+    }
+  
+    .sideMargins {
+      display: none; /* Hide side margins */
+    }
+  }

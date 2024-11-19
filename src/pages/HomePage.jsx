@@ -9,6 +9,7 @@ import MyImage2 from '../assets/images/image2.jpg';
 import MyImage3 from '../assets/images/image3.jpg';
 
 function HomePage() {
+  console.log("Rendering HomePage");
   return (
     <>
     <main>

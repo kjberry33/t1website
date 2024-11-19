@@ -1,6 +1,6 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import styles from '../components/NavigationStyles.module.css';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import styles from "../components/NavigationStyles.module.css";
 
 function Navigation() {
   const location = useLocation();
@@ -8,20 +8,20 @@ function Navigation() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
-        <li className={location.pathname === '/' ? styles.active : ''}>
-          <a href="/">About</a>
+        <li className={location.pathname === "/" ? styles.active : ""}>
+          <Link to="/">About</Link>
         </li>
-        <li className={location.pathname === '/demo' ? styles.active : ''}>
-          <a href="/demo">Demo Video</a>
+        <li className={location.pathname === "/demo" ? styles.active : ""}>
+          <Link to="/demo">Demo Video</Link>
         </li>
-        <li className={location.pathname === '/report' ? styles.active : ''}>
-          <a href="/report">Final Report</a>
+        <li className={location.pathname === "/report" ? styles.active : ""}>
+          <Link to="/report">Final Report</Link>
         </li>
-        <li className={location.pathname === '/looker' ? styles.active : ''}>
-          <a href="/looker">Looker Studio</a>
+        <li className={location.pathname === "/looker" ? styles.active : ""}>
+          <Link to="/looker">Looker Studio</Link>
         </li>
-        <li className={location.pathname === '/code' ? styles.active : ''}>
-          <a href="/code">Source Code</a>
+        <li className={location.pathname === "/code" ? styles.active : ""}>
+          <Link to="/code">Source Code</Link>
         </li>
       </ul>
     </nav>

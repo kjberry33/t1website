@@ -8,6 +8,8 @@ import DemoPage from "./pages/DemoPage";
 import ReportPage from "./pages/ReportPage";
 import LookerPage from "./pages/LookerPage";
 import CodePage from "./pages/CodePage";
+import './App.css';
+import React from "react";
 
 function App() {
   return (
